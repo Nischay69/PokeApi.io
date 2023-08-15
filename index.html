@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokemonApi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="search">
+          <div class="search-button">
+            <form class="form">
+              <input
+                type="text"
+                placeholder="Search Pokemon"
+                class="search-bar"
+              />
+              <i class="fas fa-search search-img"></i>
+            </form>
+          </div>
+          <div class="menus">
+            <button class="ascending">
+              <img src="images/ascending.png" alt="" class="asc-img" />Ascending
+            </button>
+            <button class="descending">
+              <img
+                src="images/descending.png"
+                alt=""
+                class="desc-img"
+              />Decending
+            </button>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr class="table-head">
+              <th>Pokemon Id</th>
+              <th>Pokemon Name</th>
+              <th>Url</th>
+              <th>Trash</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-content">
+            <!-- Contents!! -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
