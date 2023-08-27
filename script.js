@@ -18,13 +18,11 @@ const getPokemons = async () => {
 
   // Delete Function
   a = document.querySelectorAll(".trash-button");
-  console.log(a);
+
   a.forEach((btn) => {
     btn.addEventListener("click", () => {
       let element = btn.parentElement.parentElement;
       element.remove();
-      console.log(pokemonsArr);
-      fetchPokemons(pokemonsArr);
     });
   });
 
@@ -73,19 +71,16 @@ const fetchPokemons = (pokemons) => {
 };
 
 const searchFun = () => {
-  console.log(pokemonsArr);
   b = pokemonsArr.filter((n) => {
     searchinput = searchValue.value.toLowerCase();
     return n.name.startsWith(searchinput);
   });
-  console.log(b);
   tableContent.innerHTML = " ";
   b.forEach(() => {
     tableContent.innerHTML = " ";
     fetchPokemons(b);
   });
   a = document.querySelectorAll(".trash-button");
-  console.log(a);
   a.forEach((btn) => {
     btn.addEventListener("click", () => {
       let element = btn.parentElement.parentElement;
@@ -102,7 +97,6 @@ const sortA = () => {
   pokemonsArr.sort(sortFun);
   fetchPokemons(pokemonsArr);
   a = document.querySelectorAll(".trash-button");
-  console.log(a);
   a.forEach((btn) => {
     btn.addEventListener("click", () => {
       let element = btn.parentElement.parentElement;
@@ -119,7 +113,7 @@ const sortB = () => {
   pokemonsArr.sort(sortFun);
   fetchPokemons(pokemonsArr);
   a = document.querySelectorAll(".trash-button");
-  console.log(a);
+
   a.forEach((btn) => {
     btn.addEventListener("click", () => {
       let element = btn.parentElement.parentElement;
