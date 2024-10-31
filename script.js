@@ -16,7 +16,7 @@ const getPokemons = async () => {
   fetchPokemons(pokemonsArr);
   console.log(pokemonsArr);
 
-  // Delete Function
+  // Delete Functionality
   a = document.querySelectorAll(".trash-button");
 
   a.forEach((btn) => {
@@ -35,15 +35,7 @@ const getPokemons = async () => {
 
 getPokemons();
 
-// const deleteFunc = (id) => {
-//   rawPokemons.splice(id, 1);
-//   tableContent.innerHTML = " ";
-//   if (searchValue == "") {
-//     fetchPokemons(pokemonsArr);
-//   } else {
-//     searchFun();
-//   }
-// };
+
 
 const fetchPokemons = (pokemons) => {
   pokemons.forEach((poke, i) => {
